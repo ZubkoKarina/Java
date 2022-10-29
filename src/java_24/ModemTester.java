@@ -9,8 +9,10 @@ public class ModemTester{
         System.out.println("попытка подключения кабельного модема: ");
         surfBoard.displaySpeed();
         surfBoard.connect();
+        surfBoard.disconnest();
         System.out.println("попытка подключения DSL-модема: ");
         gateway.displaySpeed();
         gateway.connect();
+        gateway.disconnest();
     }
 }
