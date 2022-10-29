@@ -1,11 +1,15 @@
 package java_24;
 
-class Root {
-    public static void main(String[] arguments){
-        int number = 225;
-        System.out.println("Квадратний корень из "
+class Root{
+    public static void main(String[] arguments) {
+        int number = 100;
+        
+        if (arguments.length > 0) {
+            number = Integer.parseInt(arguments[0]);
+        }
+        System.out.println("The square root of "
             + number
-            + " равен "
+            + " is "
             + Math.sqrt(number)
         );
     }
