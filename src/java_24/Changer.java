@@ -5,7 +5,7 @@ public class Changer {
         if (arguments.length > 0) {
             System.out.println("The original value: "
                 + arguments[0]);
-            Float num1 = new Float(arguments[0]);
+            Float num1 = Float.valueOf(arguments[0]);
             float num2 = num1;
             int num3 = (int) num2;
             System.out.println("The final value: " + num3);
