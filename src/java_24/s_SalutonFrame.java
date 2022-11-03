@@ -3,9 +3,9 @@ package java_24;
 import javax.swing.*;
 import java.awt.*;
 
-public class SalutonFrame extends JFrame {
+public class s_SalutonFrame extends JFrame {
     
-    public SalutonFrame(){
+    public s_SalutonFrame(){
         super("Saluton mondo!"); 
         setLookAndFeel();
         setSize(700,400);
@@ -37,6 +37,6 @@ public class SalutonFrame extends JFrame {
     }
 
     public static void main(String[] arguments){
-        SalutonFrame frame = new SalutonFrame();
+        s_SalutonFrame frame = new s_SalutonFrame();
     }
 }
