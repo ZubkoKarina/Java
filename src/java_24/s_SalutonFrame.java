@@ -2,11 +2,18 @@ package java_24;
 
 import javax.swing.*;
 import java.awt.*;
+//import com.google.gson.Gson;
+
+
+//import java.io.File;
 
 public class s_SalutonFrame extends JFrame {
     
     public s_SalutonFrame(){
         super("Saluton mondo!"); 
+        //
+        //ObjectMapper mapper = new ObjectMapper();
+        //
         setLookAndFeel();
         setSize(700,400);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -28,6 +35,7 @@ public class s_SalutonFrame extends JFrame {
     
     private void setLookAndFeel() {
         try {
+            //mapper.writeValue(new File("~/NetBeansProjects/Java_24/src/java_24/s_SalutionFrame.json"), s_SalutionFrame);
             UIManager.setLookAndFeel(
                 "javax.swing.plaf.nimbus.NimbusLookAndFeel"
             );

@@ -26,8 +26,20 @@ public class FreeSpacePanel extends JPanel {
         long freeSpace = store.getUsableSpace();
         double percent = (double)freeSpace / (double)totalSpace * 100;
         percent = (int)(percent * 100) / (double)100;
-        space.setText(freeSpace + " free out of " + totalSpace + " ("
-            + percent + "%)");
+        space.setText(getValueWithCommas(freeSpace) + " free out of " +
+            getValueWithCommas(totalSpace) + " (" + percent + "%)");
         
      }
+    private String getValueWithCommas(long value) {
+        String input = "" + value;
+        StringBuilder output = new StringBuilder();
+        for (int i = 0; i < input.length(); i++) {
+            if ((input.length()- i) % 3 == 0) {
+                output.append(",");
+            }
+            output.append(input.charAt(i));
+        }
+        return output.toString();
+    }
+    
 }
