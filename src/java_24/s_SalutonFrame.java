@@ -43,8 +43,5 @@ public class s_SalutonFrame extends JFrame {
 
     public static void main(String[] arguments){
         s_SalutonFrame frame = new s_SalutonFrame();
-        Gson gson = new Gson();   
-        String json = gson.toJson(user);
-        System.out.println(json);  
     }
 }
