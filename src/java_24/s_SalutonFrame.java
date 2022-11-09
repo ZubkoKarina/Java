@@ -2,10 +2,8 @@ package java_24;
 
 import javax.swing.*;
 import java.awt.*;
-//import com.google.gson.Gson;
+import com.google.gson.Gson;
 
-
-//import java.io.File;
 
 public class s_SalutonFrame extends JFrame {
     
@@ -35,7 +33,6 @@ public class s_SalutonFrame extends JFrame {
     
     private void setLookAndFeel() {
         try {
-            //mapper.writeValue(new File("~/NetBeansProjects/Java_24/src/java_24/s_SalutionFrame.json"), s_SalutionFrame);
             UIManager.setLookAndFeel(
                 "javax.swing.plaf.nimbus.NimbusLookAndFeel"
             );
@@ -46,5 +43,8 @@ public class s_SalutonFrame extends JFrame {
 
     public static void main(String[] arguments){
         s_SalutonFrame frame = new s_SalutonFrame();
+        Gson gson = new Gson();   
+        String json = gson.toJson(user);
+        System.out.println(json);  
     }
 }
